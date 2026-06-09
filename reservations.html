@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Maison – Reservations</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="reservations.css">
+</head>
+
+<body>
+
+  <!-- GLOBAL NAV -->
+  <nav class="global-nav">
+    <a href="index.html" class="nav-logo">LA MAISON</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="menu.html" class="nav-btn">Menu</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="gallery.html" class="nav-btn">Gallery</a>
+      <a href="reservations.html" class="nav-btn active-page">Reserve</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE 5: RESERVATIONS -->
+  <div class="p5-split">
+
+    <!-- LEFT INFO PANEL -->
+    <div class="p5-left">
+      <p class="p5-left-tag">✦ Reservations</p>
+      <h2>Book Your<br><em>Perfect</em><br>Evening</h2>
+      <p>We recommend reserving at least 48 hours in advance. For parties over 10, please contact us directly. Dress
+        code: Smart casual.</p>
+      <div class="p5-info-row">
+        <div class="p5-info-item">
+          <div class="p5-info-icon">⏰</div>
+          <div class="p5-info-text">
+            <strong>Opening Hours</strong>
+            Lunch 12pm–3pm · Dinner 7pm–11pm<br>Closed on Tuesdays
+          </div>
+        </div>
+        <div class="p5-info-item">
+          <div class="p5-info-icon">📍</div>
+          <div class="p5-info-text">
+            <strong>Location</strong>
+            12, Nungambakkam High Road<br>Chennai, Tamil Nadu 600034
+          </div>
+        </div>
+        <div class="p5-info-item">
+          <div class="p5-info-icon">📞</div>
+          <div class="p5-info-text">
+            <strong>Phone</strong>+91 44 4567 8900
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM PANEL -->
+    <div class="p5-right">
+      <h3 class="p5-form-title">Make a Reservation</h3>
+      <p class="p5-form-sub">Fill in the details below — we'll confirm within 24 hours</p>
+
+      <form action="#" method="post">
+        <div class="p5-row">
+          <div class="p5-field">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Arnaud">
+          </div>
+          <div class="p5-field">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Dubois">
+          </div>
+        </div>
+        <div class="p5-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="p5-field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+        </div>
+        <div class="p5-row">
+          <div class="p5-field">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="p5-field">
+            <label for="time">Time</label>
+            <select id="time" name="time">
+              <option>12:00 PM – Lunch</option>
+              <option>1:00 PM – Lunch</option>
+              <option>7:00 PM – Dinner</option>
+              <option>8:00 PM – Dinner</option>
+              <option>9:00 PM – Dinner</option>
+            </select>
+          </div>
+        </div>
+        <div class="p5-field">
+          <label for="guests">Number of Guests</label>
+          <select id="guests" name="guests">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5–6 Guests</option>
+            <option>7–10 Guests</option>
+            <option>10+ Guests (contact us)</option>
+          </select>
+        </div>
+        <div class="p5-field">
+          <label for="requests">Special Requests</label>
+          <input type="text" id="requests" name="requests" placeholder="Allergies, celebrations, seating preferences…">
+        </div>
+        <button type="submit" class="btn-reserve">Confirm Reservation</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

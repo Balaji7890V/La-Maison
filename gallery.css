@@ -1,0 +1,163 @@
+/* ============================================================
+   PAGE 4 — GALLERY (Bold Brutalist Style)
+============================================================ */
+body {
+  background: #f0ebe3;
+}
+
+.p4-wrap {
+  animation: fadeIn 0.6s ease both;
+}
+
+.p4-header {
+  background: #1c1c1c;
+  padding: 140px 60px 50px;
+}
+
+.p4-header-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.p4-title-big {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(60px, 12vw, 150px);
+  color: #f0ebe3;
+  letter-spacing: 8px;
+  line-height: 0.9;
+}
+
+.p4-title-big span {
+  color: #ff4d00;
+}
+
+.p4-header-sub {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  color: rgba(240, 235, 227, 0.4);
+  text-transform: uppercase;
+  line-height: 2;
+  max-width: 200px;
+  text-align: right;
+}
+
+.p4-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+  padding: 4px;
+  background: #1c1c1c;
+}
+
+.p4-cell {
+  background: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.p4-cell:hover {
+  transform: scale(1.02);
+  z-index: 2;
+}
+
+.p4-cell span {
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgba(240, 235, 227, 0.15);
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.p4-cell.big {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.p4-cell.wide {
+  grid-column: span 4;
+}
+
+.p4-cell.med {
+  grid-column: span 3;
+}
+
+.p4-cell.c1 {
+  background: linear-gradient(135deg, #1c1c1c 0%, #333 100%);
+}
+
+.p4-cell.c2 {
+  background: linear-gradient(135deg, #ff4d00 0%, #c93800 100%);
+}
+
+.p4-cell.c3 {
+  background: linear-gradient(135deg, #2a2a2a 0%, #444 100%);
+}
+
+.p4-cell.c4 {
+  background: linear-gradient(135deg, #f0ebe3 0%, #d5cfc7 100%);
+}
+
+.p4-cell.c4 span {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.p4-bottom {
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0ebe3;
+}
+
+.p4-bottom h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(28px, 4vw, 48px);
+  color: #1c1c1c;
+  letter-spacing: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .p4-header {
+    padding: 120px 24px 40px;
+  }
+
+  .p4-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .p4-header-sub {
+    text-align: left;
+  }
+
+  .p4-cell.big {
+    grid-column: span 12;
+  }
+
+  .p4-cell.wide {
+    grid-column: span 6;
+  }
+
+  .p4-cell.med {
+    grid-column: span 6;
+  }
+
+  .p4-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 40px 24px;
+  }
+}

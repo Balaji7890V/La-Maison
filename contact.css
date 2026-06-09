@@ -1,0 +1,199 @@
+/* ============================================================
+   PAGE 6 — CONTACT (Retro Warm Cream)
+============================================================ */
+body {
+  background: #f5efe6;
+}
+
+.p6-wrap {
+  animation: fadeIn 0.6s ease both;
+}
+
+.p6-top {
+  background: #c8392b;
+  padding: 140px 80px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.p6-top::before {
+  content: 'CONTACT';
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(100px, 18vw, 200px);
+  color: rgba(255, 255, 255, 0.05);
+  bottom: -20px;
+  right: 40px;
+  letter-spacing: 10px;
+  pointer-events: none;
+}
+
+.p6-top h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(44px, 7vw, 88px);
+  color: #f5efe6;
+  font-weight: 300;
+  line-height: 1.05;
+  position: relative;
+}
+
+.p6-top h2 em {
+  font-style: italic;
+  color: rgba(245, 239, 230, 0.6);
+}
+
+.p6-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+
+.p6-col {
+  padding: 60px 50px;
+}
+
+.p6-col:not(:last-child) {
+  border-right: 1px solid rgba(30, 20, 10, 0.1);
+}
+
+.p6-col h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: #c8392b;
+  margin-bottom: 20px;
+}
+
+.p6-col p {
+  font-size: 0.85rem;
+  color: #5a3e2b;
+  line-height: 2;
+}
+
+.p6-col a {
+  color: #c8392b;
+  text-decoration: none;
+}
+
+.p6-col a:hover {
+  text-decoration: underline;
+}
+
+.p6-map-mock {
+  background: #2d1f0e;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.p6-map-mock::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(212, 135, 78, 0.05) 30px, rgba(212, 135, 78, 0.05) 31px),
+    repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(212, 135, 78, 0.05) 30px, rgba(212, 135, 78, 0.05) 31px);
+}
+
+.p6-map-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.p6-map-pin {
+  font-size: 2.5rem;
+}
+
+.p6-map-label {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 4px;
+  color: rgba(212, 135, 78, 0.6);
+  margin-top: 10px;
+}
+
+.p6-map-address {
+  font-size: 0.65rem;
+  color: rgba(212, 135, 78, 0.35);
+  margin-top: 6px;
+  letter-spacing: 2px;
+}
+
+.p6-footer {
+  background: #1a0f05;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p6-footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: #d4af37;
+  letter-spacing: 4px;
+}
+
+.p6-footer-copy {
+  font-size: 0.68rem;
+  color: rgba(212, 175, 55, 0.35);
+  letter-spacing: 2px;
+}
+
+.p6-social {
+  display: flex;
+  gap: 16px;
+}
+
+.p6-social a {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: rgba(212, 175, 55, 0.6);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.p6-social a:hover {
+  background: #d4af37;
+  color: #1a0f05;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .p6-top {
+    padding: 120px 24px 50px;
+  }
+
+  .p6-body {
+    grid-template-columns: 1fr;
+  }
+
+  .p6-col:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(30, 20, 10, 0.1);
+  }
+
+  .p6-col {
+    padding: 40px 24px;
+  }
+
+  .p6-map-mock {
+    margin: 0 24px 40px;
+  }
+
+  .p6-footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 24px;
+  }
+}
